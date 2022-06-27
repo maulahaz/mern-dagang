@@ -4,11 +4,13 @@ import data from './data.js';
 const app = express();
 
 //--Route:
-app.get('/', ()=>{
-  console.log('Hi Master');;
-});
+// app.get('/', ()=>{
+//   console.log('Hi Master');;
+// });
+
 app.get('/api/products', (req, res)=>{
     res.send(data.products);
+    // console.log(data.products);
 })
 
 const port = process.env.PORT || 5000;

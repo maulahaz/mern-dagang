@@ -36,5 +36,19 @@ const data = {
             numReviews: 7,
             description: "High quality Shoes for marathon"
         },
+        {
+            name: "Baju Poshboy",
+            slug: "baju-poshboy",
+            category: "Baju",
+            image: "/images/p4.jpg",
+            price:  90,
+            countInStock: 4,
+            brand: "Poshboy",
+            rating: 3.5,
+            numReviews: 12,
+            description: "Bajunya bikin nyaman, gak gerah"
+        },
     ]
 }
+
+export default data;
