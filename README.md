@@ -5,7 +5,7 @@ To Make Web Apps about eCommerce
 
 ### Detail:
 - Started: Mid Jun-2022
-- Using ExpressJS Framework.
-- Using MongoDB.
+- Server Dependencies: Express, MongoDB, DotEnv. 
+- Client Dependencies: Bootstrap, use-reducer-logger, Axios, react-router-dom, react-router-bootstrap. 
 
 ### Snapshots:
