@@ -45,7 +45,7 @@ const data = {
             countInStock: 4.5,
             brand: "Poshboy",
             rating: 5,
-            numReviews: 12,
+            numReviews: 1,
             description: "Bajunya bikin nyaman, gak gerah"
         },
     ]

@@ -57,6 +57,7 @@ function Rating(props) {
           }
         ></i>
       </span>
+      <span className="review"> {numReview > 1 ? numReview +' Reviews' : numReview +' Review'}</span>
     </div>
   );
 }

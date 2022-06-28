@@ -42,3 +42,13 @@ main{
 .product-info{
   padding: 1rem;
 }
+.rating span{
+  color: #ffc000;
+}
+.btn-primary{
+  color: black;
+  background-color: #f0c040;
+}
+/* .review{
+  color: #000;
+} */
