@@ -30,7 +30,7 @@ const data = {
             category: "Shoes",
             image: "/images/p3.jpg",
             price:  111,
-            countInStock: 2,
+            countInStock: 0,
             brand: "Puma",
             rating: 4.5,
             numReviews: 7,

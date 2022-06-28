@@ -1,6 +1,6 @@
 import { Navbar, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { BrowserRouter,Routes,Route,Link } from 'react-router-dom';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import ProductPage from './pages/ProductPage';
 
@@ -18,10 +18,10 @@ function App() {
         </Navbar>
       </header>
       <main>
-        <Container>
+        <Container className="mt-4">
           <Routes>
             <Route path={`/`} element={<HomePage/>} />
-            <Route path={`/product/:slug`} element={<ProductPage/>} />
+            <Route path={`/api/products/slug/:slug`} element={<ProductPage/>} />
           </Routes>
         </Container>
       </main>  
