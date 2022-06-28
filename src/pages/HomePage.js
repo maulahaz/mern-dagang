@@ -5,6 +5,9 @@ import axios from "axios";
 import logger from "use-reducer-logger";
 import { Row, Col } from 'react-bootstrap';
 import Product from '../components/Product';
+import LoadingBox from "../components/LoadingBox";
+import MessageBox from "../components/MessageBox";
+import { getError } from "../Utils";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -33,7 +36,7 @@ function HomePage() {
         const result = await axios.get("/api/products");
         dispatch({ type: "FETCH_SUCCESS", payload: result.data });
       } catch (error) {
-        dispatch({ type: "FETCH_FAIL", payload: error.message });
+        dispatch({ type: "FETCH_FAIL", payload: getError(error) });
       }
 
       // setProduct(result.data);
@@ -45,9 +48,9 @@ function HomePage() {
       <h1>Feuture Products</h1>
       <div className="products">
         {loading ? (
-          <div>Loading...</div>
+          <LoadingBox />
         ) : error ? (
-          <div>Error : {error}</div>
+          <MessageBox variant="danger">{error}</MessageBox>
         ) : (
           <Row>
           {products.map((prod) => (
